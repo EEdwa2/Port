@@ -1,0 +1,62 @@
+.button{
+    background-color:RGBA(226, 223, 238, 0.06);
+    border-radius: 10px;
+    border: 0;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    padding: 11px 20px;
+}
+.buttonWhite{
+    color: white;
+}
+.buttonRed{
+    color: RGB(255, 65, 75);
+}
+
+@media (max-width: 930px) {
+    .button{
+        width: 141px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .button{
+        width: 120px;
+    }
+
+}
+
+@media (max-width: 485px) {
+    .button{
+        width: 100px;
+    }
+
+}
+@media (max-width: 485px) {
+    .button{
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 450px) { 
+    .button{
+        font-size: 12px;
+    }
+  } 
+@media (max-width: 430px) {
+    .button{
+        padding: 9px 18px;
+    }
+}
+@media (max-width: 310px) {
+    .button{
+        width: 90px;
+    }
+
+}

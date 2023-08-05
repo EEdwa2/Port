@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"lib": ["es5", "es6", "DOM"],
+		"module": "CommonJS",
+		"esModuleInterop": true,
+		"target": "ESNext",
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"declaration": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strict": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"noErrorTruncation": true,
+		"outDir": "./dist"
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}

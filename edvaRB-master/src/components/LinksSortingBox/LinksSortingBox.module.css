@@ -1,0 +1,54 @@
+.contentWrapper{
+    position: fixed;
+    margin-top: -25px;
+    background-color:RGBA(226, 223, 238, 0.15);
+    border-radius: 7px;
+    backdrop-filter: blur(5px);
+    max-height: 45%;
+    overflow: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.contentWrapper::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+.contentWrapper::-webkit-scrollbar-thumb {
+    width: 1px;
+    background-color:RGBA(226, 223, 238, 0.24);
+    border-radius: 3px;
+    border: 1px solid RGBA(151, 151, 151, 0.39);
+}
+
+.contentWrapper_active{
+    opacity: 1;
+    pointer-events: all;
+}
+.tableWrapper{
+    padding: 22px 5px;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+.rowWrapper{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+}
+.rowText{
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+.rowWrapper_active{
+    background-color: RGBA(226, 223, 238, 0.15);
+}

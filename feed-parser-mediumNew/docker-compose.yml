@@ -1,0 +1,49 @@
+version: "3.7"
+
+services:
+    # discord-parser-docker:
+    #   container_name: parser-container
+    #   depends_on:
+    #     - db
+    #   build:
+    #     context: .
+    #     dockerfile: Dockerfile
+    #     target: base
+    #   volumes:
+    #     - ./src:/home/node/app/src
+    #     - ./images:/home/node/app/images
+    #   command: npm run dev
+
+    #  Postgres db
+    db:
+        container_name: pg-container
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_USER: user
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: db_name
+            POSTGRES_HOST_AUTH_METHOD: trust
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+        ports:
+            - "8472:5432"
+    pgadmin:
+        container_name: pgadmin_container
+        image: dpage/pgadmin4
+        depends_on:
+        - db
+        restart: always
+        environment:
+            PGADMIN_DEFAULT_EMAIL: ${PGADMING_EMAIL}
+            PGADMIN_DEFAULT_PASSWORD: ${POSTGRES_PASSWORD}
+        logging:
+            driver: none
+        ports:
+        - "5050:80"
+networks:
+    default:
+        name: parsers-network
+
+volumes:
+    pgdata: {}

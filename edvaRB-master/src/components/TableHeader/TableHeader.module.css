@@ -1,0 +1,35 @@
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.td
+{
+    color: RGBA(222, 221, 228, 0.56);
+    font-size: 14px;
+    font-weight: 600;
+    /* width: 171px; */
+    display: flex;
+}
+th{
+    padding: 0  ;
+}
+
+    @media (max-width: 450px) { 
+        .td{
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .td{
+            width: 63px;
+        }
+        } 
+    @media (max-width: 450px) { 
+        .tbody{
+            font-size: 10px;
+        }
+        }   

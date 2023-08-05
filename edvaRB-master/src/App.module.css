@@ -1,0 +1,51 @@
+.appWrapper {
+  width: 100%;
+  background: url(img/Background.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  color: white;
+}
+.mainPartWrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4% 50px;
+}
+.line{
+  background-color: rgb(37 39 77);
+  width: 1px;
+  margin: 0 4% 0;
+}
+
+@media (min-width: 1650px) { 
+    .mainPartWrapper{
+      justify-content: space-evenly;
+    }
+ }
+
+@media (min-width: 2000px) { 
+    .mainPartWrapper{
+      justify-content: center;
+
+    }
+
+    
+  }   
+  @media (min-width: 1350px) { 
+    .appWrapper{
+   height: 100vh;
+
+    }
+  }
+  @media (max-width: 1350px) { 
+    .mainPartWrapper{
+      flex-direction: column;
+      align-items: center;
+    }
+  }   
+  /* @media (min-width: 1500px) { 
+    .appWrapper{
+      height: 100vh;
+    }
+  }    */

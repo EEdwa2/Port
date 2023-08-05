@@ -1,0 +1,127 @@
+.ReferalLinksItemWrapper{
+    background-color: RGBA(226, 223, 238, 0.06);
+    border-radius: 16px;
+    margin-bottom: 8px;
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ReferalLinksCodeBlock{
+    margin-right: 48px;
+}
+.ReferalLinksItemHeader{
+    font-size: 12px;
+    color: RGBA(222, 221, 228, 0.56);
+    font-weight: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ReferalLinksItemLinkValue{
+    font-size: 14px;
+    color: RGB(173, 182, 242);
+    margin-top: 6px;
+    font-weight: 600px;
+}
+.ReferalLinksItemCopyButton{
+    background: none;
+    border: 0;
+    padding:  0 7.25px;
+    color: RGBA(226, 223, 238, 0.48);
+    cursor: pointer;
+}
+.ReferalLinksItemCodeValue{
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: 600px;
+    display: flex;
+}
+.ReferalLinksItemDataWrapper{
+    /* width: 577px; */
+    /* width: 505px; */
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+}
+.copied{
+    position: relative;
+    padding: 3px 8px;
+    color: #6cdc62;
+    background-color: #171527;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+}
+.copiedCode_active{
+    opacity: 1;
+}
+.copiedLink_active{
+    opacity: 1;
+}
+.ReferalLinksItemIncomeValue{
+    color: #ffd127;
+}
+.ReferalLinksItemButtonWrapper{
+    width: 195px;
+    display: flex;
+    justify-content: space-between;
+    max-height: 40px;
+}
+.codeAndIncomeBlock{
+    display: flex;
+    width: 50%;
+}
+
+@media (max-width: 1600px) { 
+    /* .ReferalLinksItemDataWrapper{
+        width: 450px;
+    } */
+  }   
+
+@media (max-width: 930px) { 
+    .ReferalLinksItemHeader{
+        justify-content: flex-start;
+    }
+    .copied{
+        margin-left: 20px
+    }
+    .ReferalLinksItemWrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ReferalLinksItemButtonWrapper{
+        margin-top: 25px;
+        width: 100%;
+    }
+    .ReferalLinksItemDataWrapper{
+        flex-direction: column;
+        width: 100%;
+    }
+    .codeAndIncomeBlock{
+        margin-top: 25px;
+        justify-content: space-between;
+    }
+    .ReferalLinksItemWrapper{
+        padding: 28px 52px;
+    }
+  } 
+  @media (max-width: 450px) { 
+    .ReferalLinksItemHeader{
+        font-size: 10px;
+    }
+    .ReferalLinksItemLinkValue{
+        font-size: 12px;
+    }
+    .ReferalLinksItemCodeValue{
+        font-size: 12px;
+    }
+    .ReferalLinksItemIncomeValue{
+        font-size: 12px;
+    }
+  } 
+  @media (max-width: 420px) { 
+    .ReferalLinksItemWrapper{
+        padding: 24px 24px;
+    }
+  } 

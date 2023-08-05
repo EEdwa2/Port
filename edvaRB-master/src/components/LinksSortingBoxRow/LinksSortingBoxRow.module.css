@@ -1,0 +1,20 @@
+.rowWrapper{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    margin-top: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.rowText{
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+.rowWrapper_active{
+    background-color: RGBA(226, 223, 238, 0.15);
+}

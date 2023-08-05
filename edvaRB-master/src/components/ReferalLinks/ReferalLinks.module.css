@@ -1,0 +1,57 @@
+.referalLinksWrapper{
+    width: 849px;
+}
+.referalLinksHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.referalLinksHeaderTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+.referalLinksHeaderButton{
+    color: #ffd127;
+    background: none;
+    border: 0;
+    font-size: 16px;
+    padding:3px 0 0 0;
+    cursor: pointer;
+}
+
+@media (min-width: 2000px) {
+    .referalLinksWrapper{
+      margin-right: 50px;
+
+    }
+  }
+
+  @media (max-width: 1600px) {
+    .referalLinksWrapper{
+      width: 52%;
+    }
+  }
+  @media (max-width: 1500px) {
+    .referalLinksWrapper{
+      width: 59%;
+    }
+  }
+  @media (max-width: 1350px) {
+    .referalLinksWrapper{
+      width: 90%;
+    }
+  }
+  @media (max-width: 450px) {
+    .referalLinksHeaderTitle{
+        font-size: 16px;
+    }
+  }
+  @media (max-width: 450px) {
+    .referalLinksHeaderButton{
+        font-size: 14px;
+    }
+  }
+  @media (max-width: 400px) {
+    .referalLinksWrapper{
+        width: 95%;
+    }
+  }

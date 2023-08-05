@@ -1,0 +1,733 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto Slab";
+  color: #1e1e1e;
+}
+.main {
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+  text-align: center;
+  max-width: 490px;
+  min-height: 100vh;
+}
+.app {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input {
+  font-family: inherit;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+.tipSize {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 130%;
+  opacity: 1;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1px 0;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 36px 0;
+  justify-content: center;
+}
+.logoSvg {
+  width: 80%;
+  height: 80%;
+}
+#imgLogo {
+  font-weight: 800;
+  font-size: 34px;
+  letter-spacing: 0.08em;
+  max-height: 126px;
+}
+#poweredLogo {
+  padding-top: 8px;
+}
+#poweredByText {
+  color: #a3a3a3;
+  font-size: 8px;
+}
+.employee {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 1px 0;
+  justify-content: center;
+}
+.imgEmployee {
+  height: 166.5px;
+  width: 166.5px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #5ea8ffcf;
+}
+.imgBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  outline: 12px solid #c1e5ffa3;
+}
+.greyText {
+  font-family: "Roboto Slab", serif;
+  text-shadow: 1px 1px 0px #ffffff94;
+  color: #381841;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 130%;
+}
+.subtitle {
+  padding-top: 25px;
+}
+.employeeAbout {
+  display: inline-block;
+  margin: 0 auto;
+}
+.dreamsAbout {
+  margin: 0 5px;
+}
+#employeeFirstName {
+  font-family: "Roboto Slab", serif;
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 93%;
+  letter-spacing: 0em;
+  text-shadow: 1px 1px 0px #ffffffb0;
+}
+.dreamsAboutHeader {
+  padding-top: 46px;
+  padding-bottom: 9px;
+}
+#dreamsAboutContent {
+  backdrop-filter: blur(5px);
+  padding: 12px 20px;
+  background: #ffffffcc;
+  box-shadow: 5px 5px 6px 0px #00000040;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0em;
+  text-align: center;
+}
+form {
+  display: block;
+  margin-top: 0em;
+}
+.pay {
+  backdrop-filter: blur(5px);
+  font-family: "Roboto Slab", serif;
+  background-color: #ffffffcc;
+  box-shadow: 5px 5px 6px 0px #00000040;
+  border-radius: 40px 40px 0 0;
+  padding: 20px 0;
+  margin-top: 14px;
+}
+.divOut {
+  margin: 0 auto;
+  position: relative;
+  width: 70%;
+  border-bottom: 1px solid #a4a4a4;
+  padding-bottom: 8px;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  font-size: 34px;
+}
+.number {
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  font-size: 34px;
+}
+.tipInputOut {
+  box-sizing: border-box;
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  color: #1e1e1e;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-right: 48px;
+}
+.jointInput {
+  position: absolute;
+  white-space: nowrap;
+  top: 0;
+  width: 100%;
+}
+.inputNumber {
+  opacity: 0;
+  text-align: right;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+}
+.empty {
+  padding-right: 0px;
+}
+.tipInputOut::placeholder {
+  padding-right: 0;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+.AED {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  vertical-align: top;
+  padding: 0.6em 0 0 0.4em;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+.AEDvisible {
+  opacity: 0.5;
+}
+.warring {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #9d1919;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 17px 0 29px;
+}
+.AEDbutton {
+  background: #ffffffd6;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 12px;
+  padding: 6px 8px;
+  min-width: 60px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+}
+.AEDbutton:last-child {
+  margin-right: 0;
+}
+.firstNumber {
+  color: #8f8f8f;
+}
+.AEDbutton:active {
+  background-color: #5a5a5a60;
+  opacity: 1;
+}
+.rate {
+  width: 85%;
+  margin: 0 auto;
+}
+.rateStart {
+  margin-top: 11px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.star {
+  opacity: 0.5;
+  padding: 4px;
+  background-color: transparent;
+  border: 0;
+}
+.rateStart:not(:hover) .star.active,
+.rateStart:not(:hover) .star.active + .star,
+.rateStart:not(:hover) .star.active + .star + .star,
+.rateStart:not(:hover) .star.active + .star + .star + .star,
+.rateStart:not(:hover) .star.active + .star + .star + .star + .star {
+  opacity: 1;
+}
+.rateStart:hover .star:hover,
+.rateStart:hover .star:hover + .star,
+.rateStart:hover .star:hover + .star + .star,
+.rateStart:hover .star:hover + .star + .star + .star,
+.rateStart:hover .star:hover + .star + .star + .star + .star {
+  opacity: 1;
+}
+.svgStar {
+  pointer-events: none;
+  width: 100%;
+}
+
+.serviceFeatures {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 30px;
+}
+.features {
+  background-color: transparent;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 10px 6px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 95px;
+  height: 102px;
+}
+.featuresSelected {
+  background: linear-gradient(
+    135deg,
+    rgba(216, 132, 224, 0.84) 0%,
+    rgba(182, 76, 227, 0.84) 99.69%
+  );
+}
+.icon {
+  display: block;
+  margin: 0 auto 5px;
+}
+.iconSelected {
+  filter: invert(1);
+}
+.lable {
+  display: block;
+  font-weight: 600;
+  font-size: 10px;
+}
+.first {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+.firstSelected {
+  color: white;
+}
+.card {
+  background-color: #1e1e1e;
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+  min-height: 40px;
+  padding: 11px 0;
+  text-align: center;
+  pointer-events: all;
+  width: 85%;
+  font-family: "SF Pro Display";
+}
+.card:active {
+  background-color: #1e1e1ead;
+}
+.paymentMethod {
+  padding-top: 30px;
+}
+.payWith {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.paymentUsing {
+  padding-left: 3px;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+#payComissionYourselfCheckbox {
+  padding-top: 10px;
+  font-size: 14px;
+}
+.background {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 490px;
+  min-height: 100vh;
+}
+.positiveContent {
+  display: none;
+}
+.reaction {
+  backdrop-filter: blur(5px);
+  width: 80%;
+  margin: auto;
+  padding-top: 43px;
+  background: #ffffffcc;
+  box-shadow: 5px 5px 6px 0px #00000040;
+  border-radius: 15px;
+}
+.logoReaction {
+  margin: 0 auto;
+  display: flex;
+  padding: 36px 0 0;
+}
+.reactionHeader {
+  font-family: "Roboto Slab";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 165%;
+  text-align: center;
+}
+.reactionDescription {
+  padding: 0 23px;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 165%;
+  text-align: center;
+}
+.reactionButton {
+  width: 80%;
+  margin: 15px auto 30px;
+}
+.logoReactionSVG {
+  max-width: 80%;
+  max-height: 33px;
+  padding: 1.5% 0 1.5% 0;
+}
+
+.tripadvisor {
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 0px #00000040;
+  background: linear-gradient(
+    135deg,
+    rgba(216, 132, 224, 0.84) 0%,
+    rgba(182, 76, 227, 0.84) 99.69%
+  );
+}
+.tripadvisor:active,
+.submit:active {
+  background: linear-gradient(
+    135deg,
+    rgba(216, 132, 224, 0.84) 0%,
+    rgb(110 22 173) 99.69%
+  );
+}
+.negativeContent {
+  display: none;
+}
+.wishes {
+  padding-top: 33px;
+}
+.wishesContent {
+  padding: 11px 19px;
+  font-family: "Roboto Slab";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 165%;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  width: 80%;
+  height: 186px;
+}
+.wishesContent::placeholder {
+  color: #8f8f8f;
+}
+.wishesButton {
+  margin: 17px 0 23px;
+}
+.submit {
+  width: 90%;
+  padding: 9px 0;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 0px #00000040;
+  background: linear-gradient(
+    135deg,
+    rgba(216, 132, 224, 0.84) 0%,
+    rgba(182, 76, 227, 0.84) 99.69%
+  );
+  font-family: "Roboto Slab";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 165%;
+  text-align: center;
+}
+.open {
+  display: flex;
+  height: 100vh;
+}
+.close {
+  display: none;
+}
+@media (max-height: 1050px) and (max-width: 800px) {
+  main {
+    height: 100vh;
+  }
+  .subtitle {
+    padding-top: 18px;
+  }
+  .greyText {
+    font-size: 22px;
+  }
+  .dreamsAboutHeader {
+    padding-top: 23px;
+  }
+  #employeeFirstName {
+    font-size: 60px;
+    line-height: 100%;
+  }
+  #dreamsAboutContent {
+    padding: 6px 10px;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .divOut {
+    height: 4vh;
+  }
+  .AEDbutton {
+    padding-right: 5px;
+  }
+  .buttons {
+    width: 85%;
+    margin: 11px auto 19px;
+  }
+  .tipInputOut {
+    font-size: 28px;
+  }
+  .AEDvisible {
+    font-size: 16px;
+    line-height: 250%;
+  }
+  .tipInputOut::placeholder {
+    font-size: 24px;
+  }
+  .firstNumber {
+    font-size: 16px;
+  }
+  .blackSpan {
+    font-size: 22px;
+  }
+  .rateStart {
+    margin-top: -15px;
+  }
+  .serviceFeatures {
+    padding-top: 0;
+  }
+  .paymentMethod {
+    padding-top: 11px;
+  }
+  .imgBorder {
+    height: 112px;
+    width: 112px;
+    outline: 8px solid #c1e5ffa3;
+  }
+  .imgEmployee {
+    height: 100.5px;
+    width: 100.5px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto -20px;
+  }
+  .logo {
+    padding: 10px 0;
+  }
+  .star {
+    width: 14%;
+  }
+  .first {
+    margin-top: 20px;
+  }
+  .card {
+    padding: 0;
+    width: 80%;
+  }
+  .features {
+    height: 85px;
+  }
+  #payComissionYourselfCheckbox {
+    padding-top: 10px;
+    font-size: 10px;
+    line-height: 150%;
+  }
+  #payComissionYourselfCheckbox input {
+    margin-bottom: 0;
+  }
+  .reaction {
+    max-width: 80%;
+  }
+  .logoReaction {
+    width: 30%;
+  }
+  /* .tripadvisor {
+        width: 85%;
+        max-height: 39px;
+        border-radius: 4px;
+    }     */
+  .reactionHeader {
+    font-size: 34px;
+    line-height: 165%;
+  }
+  .reactionDescription {
+    font-size: 19px;
+    line-height: 150%;
+  }
+  .reactionButton {
+    width: 80%;
+    margin: 15px auto 30px;
+  }
+  .wishesContent {
+    font-size: 19px;
+    line-height: 150%;
+    padding: 6px 13px;
+    height: 100px;
+  }
+  .submit {
+    font-size: 24px;
+    line-height: 165%;
+  }
+}
+@media (max-width: 500px) and (max-height: 740px) {
+  .logo {
+    font-size: 86px;
+  }
+  .tipSize {
+    font-size: 22px;
+  }
+  .greyText {
+    font-size: 16px;
+    line-height: 112%;
+  }
+  #employeeFirstName {
+    font-size: 45px;
+    line-height: 112%;
+  }
+  .pay {
+    margin-top: 8px;
+    padding: 0 0 8px;
+  }
+  #dreamsAboutContent {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .tipInputOut {
+    font-size: 23px;
+  }
+  .inputNumber {
+    margin-right: -17px;
+  }
+  .divOut {
+    height: 5vh;
+  }
+  .blackSpan {
+    font-size: 18px;
+    line-height: 200%;
+  }
+  .firstNumber {
+    font-size: 11px;
+  }
+  .svgStar {
+    height: 100%;
+  }
+  .features {
+    height: 65px;
+    padding: 10px 5px 6px;
+    margin: 0 9px;
+  }
+  .icon {
+    height: 35px;
+  }
+  .first {
+    margin-top: 22px;
+    font-size: 12px;
+  }
+  .rate {
+    width: 85%;
+  }
+  .AEDbutton {
+    padding: 0px 0px;
+  }
+  .paymentUsing {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .payWith {
+    font-size: 14px;
+    line-height: 142%;
+  }
+  .card {
+    min-height: 32px;
+  }
+  .reactionHeader {
+    font-size: 34px;
+    line-height: 165%;
+  }
+  .reactionDescription {
+    font-size: 16px;
+    line-height: 138%;
+  }
+  .tripadvisor {
+    width: 85%;
+    max-height: 39px;
+    border-radius: 4px;
+  }
+  .wishes {
+    padding-top: 16px;
+  }
+
+  .wishesContent {
+    font-size: 14px;
+    line-height: 170%;
+    padding: 4px 11px;
+    height: 56px;
+  }
+  .submit {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+@media (min-height: 840px) {
+  .header {
+    flex: 1 0 10%;
+  }
+}

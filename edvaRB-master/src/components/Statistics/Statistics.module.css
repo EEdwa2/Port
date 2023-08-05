@@ -1,0 +1,181 @@
+.statisticsWrapper{
+    width: 577px;
+}
+.statisticsHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.statisticsHeaderTitle{
+    color: RGB(227, 227, 220);
+    font-size: 22px;
+    font-weight: 700;
+}
+.statisticsHeaderButton{
+    color: #ffd127;
+    background: none;
+    border: 0;
+    font-size: 16px;
+    padding:3px 0 0 0;
+
+}
+.demonstrationOfStatistics{
+    background-color: RGBA(226, 223, 238, 0.06);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 32px;
+    margin-top: 24px;
+}
+.statisticsValue{
+    font-size: 34px;
+    font-weight: 700;
+}
+.demonstrationOfStatisticsDescription{
+    font-size: 14px;
+    color: RGBA(222, 221, 228, 0.56);
+    font-weight: 700;
+    margin-top: 4px;
+    display: flex;
+}
+
+.exclamatory {
+    cursor: pointer;
+}
+
+.demonstrationOfStatisticsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.history{
+    margin-top: 48px;
+}
+.historyHeader{
+    margin-bottom: 24px;
+    color: RGB(227, 227, 220);
+    font-size: 22px;
+    font-weight: 700;
+}
+.historyTableAndButtonWrapper{
+    padding: 32px;
+    background-color: RGBA(226, 223, 238, 0.06);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.historyButtonWrapper{
+    display: flex;
+    justify-content: center;
+    padding: 46px 0 0;
+}
+.seeAllButton{
+    border: 0;
+    background: none;
+    color: RGB(255, 209, 39);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.modalHeaderWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.selectButton{
+    display: flex;
+    padding: 0;
+}
+.selectButton{
+    border: 0;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.selecteTitle{
+    padding-right: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.modalHeader{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.clouseButton{
+    padding: 0;
+    font-size: 24px;
+    line-height: 18px;
+    color: white;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+    .statisticsWrapper{
+        width: 470px;
+    }
+  }
+
+@media (max-width: 1350px) {
+    .statisticsWrapper{
+        margin: 50px 0;
+    }
+  }
+  @media (max-width: 1350px) {
+    .modalHeader{
+       display: none;
+    }
+  }
+  @media (max-width: 930px) {
+    .statisticsWrapper{
+        width: 80%;
+    }
+  }
+  @media (max-width: 700px) {
+    .historyTableWrapper{
+        padding: 0px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .demonstrationOfStatistics{
+        padding: 16px 32px 48px;
+        flex-direction: column;
+    }
+    .demonstrationOfStatisticsSection{
+        margin-top: 24px;
+    }
+    .demonstrationOfStatisticsDescription{
+        margin-top: 7px;
+    }
+  }
+  @media (max-width: 450px) {
+    .statisticsHeaderTitle{
+        font-size: 18px;
+    }
+    .statisticsHeaderButton{
+        font-size: 14px;
+    }
+    .statisticsValue{
+        font-size: 30px;
+    }
+    .demonstrationOfStatisticsDescription{
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .levelsHeader{
+        font-size: 28px;
+    }
+    .pregressBarHeader{
+        font-size: 16px;
+    }
+    .levelLimits{
+        font-size: 11px;
+    }
+  }
+  @media (max-width: 400px) {
+    .statisticsWrapper{
+        width: 95%;
+    }
+  }
